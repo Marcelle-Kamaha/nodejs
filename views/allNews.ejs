@@ -1,0 +1,55 @@
+
+<div class="container-fluid py-4 ">
+
+        <div class="position-absolute w-100 min-height-300 top-0"
+                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+                <span class="mask bg-primary opacity-6"></span>
+        </div>
+        <div class="card shadow-lg mx-4 card-profile-bottom">
+        </div>
+        <hr class="horizontal dark" />
+        <hr class="horizontal dark" />
+        <hr class="horizontal dark" />
+
+        <table style="box-shadow: 10px 5px 5px rgb(86, 74, 74); " class="table table-bordered table-striped" id="employee_table" >
+                <% if (articles !="" ) { %>
+                        <thead style="color:black ;">
+                                <td> INDEX</td>
+                                <td> TITRE</td>
+                                <td> AUTEUR </td>
+                                <td>DATE</td>
+                                <td> OPERATIONS </td>
+                        <thead>
+
+                        <tbody > 
+
+                               
+                                          <% articles.forEach((row, index)=> { %>
+                                                <tr>
+                                                        <td style="color: black;">
+                                                                <%=index %> 
+                                                        </td>
+                                                <td style="color: black;">
+                                                        <%= row.title%>
+                                                </td>
+                                                <td style="color: black;">
+                                                        <%= row.auteur%>
+                                                </td>
+                                                <td style="color: black;">
+                                                        <%= row.date%>
+                                                </td>
+                                                <td> 
+                                                 <a href=/article/<%= row._id%> > <input type="button" value="lire"></a>
+                                                <a href=/articlemod/<%= row._id%> >  <input type="button" value="modifier"></a> 
+                                                <a href=/sup/<%= row._id%> > <input type="button" value="supprimer"></a> 
+                                                </td>
+                                        </tr> 
+                                                <% }) %>
+                                                
+                                          </table>
+                                                
+                        </tbody>
+        </table>
+        <% } else { %>
+                <% } %>
+</div>

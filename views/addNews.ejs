@@ -1,0 +1,68 @@
+<div class="container-fluid py-4"  >
+    <div class="position-absolute w-100 min-height-300 top-0"
+        style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+        <span class="mask bg-primary opacity-6"></span>
+      </div>
+      <div class="card shadow-lg mx-4 card-profile-bottom">
+      </div>
+      <hr class="horizontal dark" />
+      <hr class="horizontal dark" />
+      <hr class="horizontal dark" />
+      <p>
+      <h2>Créer Une Nouvelle Actualité</h2>
+      </p>
+    <form class="form-inline" action="./addNews" method="POST" style="box-shadow: 10px 5px 5px rgb(86, 74, 74);  ">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="title" class="form-control-label">Titre</label>
+            <input class="form-control" type="text" name="title" id="title" placeholder="Entrer le titre de votre publication" required/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="example-text-input" required>Catégories</label>
+            <select class="form-control" id="example-text-input" name="categorie" required>
+              <option>Sélectionner la catégorie</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="description" class="form-control-label">Description</label>
+            <input class="form-control" type="text" name="description" id="description" placeholder="Entrer la description de vote publication" required />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="title" class="form-control-label">Contenu</label>
+            <input class="form-control" type="text" name="contenu" id="contenu" placeholder="Entrer le titre de votre publication" required/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="title" class="form-control-label">Auteur</label>
+            <input class="form-control" type="text" name="auteur" id="auteur" placeholder="Entrer le titre de votre publication" required/>
+          </div>
+        </div>
+      </div>
+      <!-- <button onclick="window.location.href = 'allNews';">publier</button> -->
+      <button  type="submit" class="btn btn-primary">Publier</button>
+     
+    </form>
+  </div>

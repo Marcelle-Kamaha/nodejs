@@ -1,0 +1,45 @@
+<div class="container-fluid py-4 ">
+    <div class="position-absolute w-100 min-height-300 top-0"
+            style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y: 50%;">
+            <span class="mask bg-primary opacity-6"></span>
+    </div>
+    <div class="card shadow-lg mx-4 card-profile-bottom">
+    </div>
+    <hr class="horizontal dark" />
+    <hr class="horizontal dark" />
+    <hr class="horizontal dark" />
+    <table style="box-shadow: 10px 5px 5px rgb(86, 74, 74); background:linear-gradient(to top,rgb(39, 86, 166) ,  rgb(167, 220, 244)); " class="table table-bordered table-striped" id="employee_table" >
+           
+                   <thead style="color:black ;">
+                           
+                            <td> TITRE</td>
+                            <td> AUTEUR </td>
+                            <td> CONTENU </td>
+                            <td>DATE</td>
+                           
+                    <thead>
+
+                        <tbody > 
+                         
+                                  <tr >
+                                        
+                                  <td style="color: black;">
+                                          <%= article.title %>
+                                  </td>
+                                  <td style="color: black;">
+                                          <%= article.auteur %>
+                                  </td>
+                                  <td style="color: black;">
+                                        <%= article.contenu %>
+                                </td>
+                                  <td style="color: black;">
+                                          <%= article.date %>
+                                  </td>
+
+                          </tr> 
+                        </tbody > 
+                         
+                   
+    </table>
+
+</div>
